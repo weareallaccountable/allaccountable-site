@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Boutique · AllAccountable</title>
 <meta name="description" content="AllAccountable : sensibilisation et prévention des abus dans le milieu du sport.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,10 +20,10 @@
 <main id="main">
 <section class="page" style="padding-bottom:40px"><div class="eyebrow"><span data-i="nav_shop">Boutique</span></div><h1 data-i="shop_h">Porte le message.</h1></section>
 <section class="shop" style="padding-bottom:100px">
-<div class="ph"><div class="box">Photo</div>
-<div style="display:flex;gap:12px"><div class="box" style="flex:1;aspect-ratio:1"></div><div class="box" style="flex:1;aspect-ratio:1"></div><div class="box" style="flex:1;aspect-ratio:1"></div></div></div>
+<div class="ph"><img id="mainimg" class="big" src="assets/noir-face.jpg" width="900" height="989" alt="" data-ia="alt_nf">
+<div class="thumbs" id="thumbs"><button type="button" data-img="nf" aria-pressed="true"><img src="assets/noir-face.jpg" alt="" data-ia="alt_nf"></button><button type="button" data-img="nb" aria-pressed="false"><img src="assets/noir-dos.jpg" alt="" data-ia="alt_nb"></button><button type="button" data-img="bf" aria-pressed="false"><img src="assets/blanc-face.jpg" alt="" data-ia="alt_bf"></button><button type="button" data-img="bb" aria-pressed="false"><img src="assets/blanc-dos.jpg" alt="" data-ia="alt_bb"></button></div></div>
 <form class="f" id="order" novalidate>
-<div><div style="font-size:44px;font-weight:600;letter-spacing:-.025em"><span data-i="shop_name">Chandail AllAccountable</span></div><div style="font-size:26px;margin-top:8px"><span data-i="shop_price">40 $</span></div><p style="font-size:19px;line-height:1.6;margin-top:16px"><span data-i="shop_p">Chaque achat finance notre campagne d'information et de prévention.</span></p></div>
+<div><div class="an" style="font-size:clamp(36px,4.4vw,56px);line-height:1.02;letter-spacing:.01em"><span data-i="shop_name">Chandail AllAccountable</span></div><div style="font-size:26px;margin-top:8px"><span data-i="shop_price">40 $</span></div><p style="font-size:19px;line-height:1.6;margin-top:16px"><span data-i="shop_p">Chaque achat finance notre campagne d'information et de prévention.</span></p></div>
 <fieldset style="border:0;padding:0;margin:0"><legend class="lbl" style="margin-bottom:10px"><span data-i="size">Taille</span></legend><div class="chips"><label><input type="radio" name="size" value="S"><span>S</span></label><label><input type="radio" name="size" value="M" checked><span>M</span></label><label><input type="radio" name="size" value="L"><span>L</span></label><label><input type="radio" name="size" value="XL"><span>XL</span></label><label><input type="radio" name="size" value="XXL"><span>XXL</span></label><label><input type="radio" name="size" value="XXXL"><span>XXXL</span></label><label><input type="radio" name="size" value="XXXXL"><span>XXXXL</span></label></div></fieldset>
 <fieldset style="border:0;padding:0;margin:0"><legend class="lbl" style="margin-bottom:10px"><span data-i="color">Couleur</span></legend><div class="chips"><label><input type="radio" name="color" value="noir" checked><span><span data-i="black">Noir</span></span></label><label><input type="radio" name="color" value="blanc"><span><span data-i="white">Blanc</span></span></label></div></fieldset>
 <div class="fld"><label class="lbl" for="qty"><span data-i="qty">Quantité</span></label><select id="qty" name="qty" style="max-width:120px"><option>1</option><option>2</option></select>

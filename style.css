@@ -1,3 +1,7 @@
+@font-face{font-family:'DM Sans';font-weight:400;font-style:normal;font-display:swap;src:url(assets/fonts/dm-sans-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-weight:500;font-style:normal;font-display:swap;src:url(assets/fonts/dm-sans-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-weight:600;font-style:normal;font-display:swap;src:url(assets/fonts/dm-sans-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Anton';font-weight:400;font-style:normal;font-display:swap;src:url(assets/fonts/anton-latin-400-normal.woff2) format('woff2')}
 :root{--ink:#262626;--paper:#f5f1ea;--accent:#9E2A2B}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -68,7 +72,7 @@ form.f{display:flex;flex-direction:column;gap:28px;max-width:640px}
 .chips{display:flex;gap:10px;flex-wrap:wrap}
 .chips label{cursor:pointer}
 .chips input{position:absolute;opacity:0}
-.chips span{display:inline-block;border:2px solid var(--ink);padding:12px 22px;border-radius:2px;font-size:17px;font-weight:600}
+.chips label>span{display:inline-block;border:2px solid var(--ink);padding:12px 22px;border-radius:2px;font-size:17px;font-weight:600}
 .chips input:checked+span{background:var(--ink);color:var(--paper)}
 .chips input:focus-visible+span{outline:3px solid var(--accent);outline-offset:3px}
 .shop{display:flex;flex-wrap:wrap;gap:64px}
@@ -82,3 +86,18 @@ form.f{display:flex;flex-direction:column;gap:28px;max-width:640px}
 .note a{border-bottom:2px solid var(--ink);font-weight:600}
 .msg{font-size:19px;border-left:4px solid var(--accent);padding-left:16px;display:none}
 .hide{display:none!important}
+
+/* police titres (comme le site original) */
+h1,h2,.an,.logo{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase}
+h1{font-size:clamp(52px,8.4vw,112px);line-height:.98;letter-spacing:.005em}
+h2{font-size:clamp(40px,5.6vw,72px);line-height:1.02;letter-spacing:.01em}
+.logo{font-size:30px;letter-spacing:.01em}
+.sec{border-top:2px solid var(--ink);margin-top:40px;padding-top:56px}
+.sec .b p:nth-child(1){font-size:20px;line-height:1.6}
+.sec .b p{font-size:20px;line-height:1.6}
+.page h1{font-size:clamp(52px,8.4vw,112px)}
+img.big{width:100%;height:auto;aspect-ratio:900/989;display:block;background:#fff;border:2px solid var(--ink)}
+.thumbs{display:flex;gap:12px}
+.thumbs button{flex:1;padding:0;border:2px solid var(--ink);background:#fff;cursor:pointer;line-height:0}
+.thumbs button[aria-pressed="true"]{outline:3px solid var(--accent);outline-offset:2px}
+.thumbs img{width:100%;aspect-ratio:1;object-fit:cover;object-position:center 40%}
