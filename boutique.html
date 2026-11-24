@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boutique · AllAccountable</title>
+<meta name="description" content="AllAccountable : sensibilisation et prévention des abus dans le milieu du sport.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main"><span data-i="skip">Aller au contenu</span></a>
+<div class="wrap">
+<header class="top">
+<a class="logo" href="index.html">AllAccountable</a>
+<nav class="main" aria-label="Navigation"><a href="index.html"><span data-i="nav_home">Accueil</span></a><a href="mission.html"><span data-i="nav_mission">Mission</span></a><a href="ressources.html"><span data-i="nav_res">Ressources</span></a><a href="boutique.html" aria-current="page"><span data-i="nav_shop">Boutique</span></a><a href="contact.html"><span data-i="nav_contact">Contact</span></a>
+<span class="lang" role="group" aria-label="Langue / Language"><button type="button" data-lang="fr" aria-pressed="true">FR</button><button type="button" data-lang="en" aria-pressed="false">EN</button></span>
+</nav>
+</header>
+<main id="main">
+<section class="page" style="padding-bottom:40px"><div class="eyebrow"><span data-i="nav_shop">Boutique</span></div><h1 data-i="shop_h">Porte le message.</h1></section>
+<section class="shop" style="padding-bottom:100px">
+<div class="ph"><div class="box">Photo</div>
+<div style="display:flex;gap:12px"><div class="box" style="flex:1;aspect-ratio:1"></div><div class="box" style="flex:1;aspect-ratio:1"></div><div class="box" style="flex:1;aspect-ratio:1"></div></div></div>
+<form class="f" id="order" novalidate>
+<div><div style="font-size:44px;font-weight:600;letter-spacing:-.025em"><span data-i="shop_name">Chandail AllAccountable</span></div><div style="font-size:26px;margin-top:8px"><span data-i="shop_price">40 $</span></div><p style="font-size:19px;line-height:1.6;margin-top:16px"><span data-i="shop_p">Chaque achat finance notre campagne d'information et de prévention.</span></p></div>
+<fieldset style="border:0;padding:0;margin:0"><legend class="lbl" style="margin-bottom:10px"><span data-i="size">Taille</span></legend><div class="chips"><label><input type="radio" name="size" value="S"><span>S</span></label><label><input type="radio" name="size" value="M" checked><span>M</span></label><label><input type="radio" name="size" value="L"><span>L</span></label><label><input type="radio" name="size" value="XL"><span>XL</span></label><label><input type="radio" name="size" value="XXL"><span>XXL</span></label><label><input type="radio" name="size" value="XXXL"><span>XXXL</span></label><label><input type="radio" name="size" value="XXXXL"><span>XXXXL</span></label></div></fieldset>
+<fieldset style="border:0;padding:0;margin:0"><legend class="lbl" style="margin-bottom:10px"><span data-i="color">Couleur</span></legend><div class="chips"><label><input type="radio" name="color" value="noir" checked><span><span data-i="black">Noir</span></span></label><label><input type="radio" name="color" value="blanc"><span><span data-i="white">Blanc</span></span></label></div></fieldset>
+<div class="fld"><label class="lbl" for="qty"><span data-i="qty">Quantité</span></label><select id="qty" name="qty" style="max-width:120px"><option>1</option><option>2</option></select>
+<div class="note"><span data-i="qnote">Livraison au Canada seulement : 20 $ pour 1 chandail, +10 $ pour le deuxième. À partir de 3 chandails,</span> <a href="contact.html"><span data-i="contact_us">contacte-nous</span></a>.</div></div>
+<fieldset style="border:0;padding:0;margin:0"><legend class="lbl" style="margin-bottom:10px"><span data-i="recv">Réception</span></legend><div class="chips"><label><input type="radio" name="recv" value="ship" checked><span><span data-i="ship">Livraison · +20 $ (Canada seulement)</span></span></label><label><input type="radio" name="recv" value="pick"><span><span data-i="pick">Ramassage à Villeray, Montréal · gratuit</span></span></label></div>
+<div class="note" style="margin-top:10px"><span data-i="pnote">Pour le ramassage,</span> <a href="contact.html"><span data-i="contact_us">contacte-nous</span></a> <span data-i="pnote2">afin de convenir d'un moment.</span></div></fieldset>
+<div class="fld"><label class="lbl" for="n"><span data-i="name">Nom complet</span></label><input id="n" name="name" autocomplete="name" required></div>
+<div class="fld"><label class="lbl" for="e"><span data-i="email">Courriel</span></label><input id="e" name="email" type="email" autocomplete="email" required></div>
+<div id="addr" style="display:flex;flex-direction:column;gap:28px">
+<div class="fld"><label class="lbl" for="a"><span data-i="addr">Adresse d'expédition</span></label><input id="a" name="address" autocomplete="street-address"></div>
+<div style="display:flex;gap:20px;flex-wrap:wrap">
+<div class="fld" style="flex:2 1 160px"><label class="lbl" for="c"><span data-i="city">Ville</span></label><input id="c" name="city" autocomplete="address-level2"></div>
+<div class="fld" style="flex:2 1 160px"><label class="lbl" for="p"><span data-i="prov">Province</span></label><select id="p" name="province"><option value="Alberta">Alberta</option><option value="Colombie-Britannique">Colombie-Britannique</option><option value="Île-du-Prince-Édouard">Île-du-Prince-Édouard</option><option value="Manitoba">Manitoba</option><option value="Nouveau-Brunswick">Nouveau-Brunswick</option><option value="Nouvelle-Écosse">Nouvelle-Écosse</option><option value="Nunavut">Nunavut</option><option value="Ontario">Ontario</option><option value="Québec" selected>Québec</option><option value="Saskatchewan">Saskatchewan</option><option value="Terre-Neuve-et-Labrador">Terre-Neuve-et-Labrador</option><option value="Territoires du Nord-Ouest">Territoires du Nord-Ouest</option><option value="Yukon">Yukon</option></select></div>
+<div class="fld" style="flex:1 1 120px"><label class="lbl" for="z"><span data-i="zip">Code postal</span></label><input id="z" name="zip" autocomplete="postal-code"></div>
+</div></div>
+<div class="sum"><div><span><span data-i="line_item">Chandail ×</span> <span id="q">1</span></span><span id="s1">40 $</span></div><div id="shiprow"><span data-i="line_ship">Livraison</span><span id="s2">20 $</span></div><div class="tot"><span data-i="total">Total</span><span id="s3">60 $</span></div></div>
+<div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start"><button class="btn" type="submit"><span data-i="order">Commander et payer</span></button><div class="note"><span data-i="paynote">Le paiement se fait ensuite de façon sécurisée avec Square. Tes informations ne sont utilisées que pour ta commande.</span></div><div class="msg" id="msg" role="status"><span data-i="demo">Aperçu : le formulaire de commande et le paiement ne sont pas encore branchés.</span></div></div>
+</form>
+</section>
+</main>
+<footer class="bot">
+<span>© AllAccountable · <a href="mailto:weareall.mtl@gmail.com">weareall.mtl@gmail.com</a></span>
+<span><a href="#"><span data-i="legal">Mentions légales</span></a><a href="#"><span data-i="privacy">Politique de confidentialité</span></a></span>
+</footer>
+</div>
+<script src="i18n.js"></script>
+</body>
+</html>
